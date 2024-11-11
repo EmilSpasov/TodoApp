@@ -1,0 +1,21 @@
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    volumes:
+      - sqlite-data:/app/data
+    ports:
+      - "5000:8080"
+    networks:
+      - todoappapi_default
+
+networks:
+  todoappapi_default:
+    external: true
+
+volumes:
+  sqlite-data:
+
