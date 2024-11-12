@@ -47,7 +47,7 @@ Open your browser and navigate to `http://localhost:5000` for the API and `http:
 
 ## Database Configuration
 
-The application uses SQLite for local development. The database file is located in the `data` directory relative to the application's base directory. The connection string is configured in `Program.cs`.
+The application uses SQLite for both local development and deployment in containers. The database file is located in the `data` directory relative to the application's base directory. The connection string is configured in `Program.cs`.
 
 ## Importing Postman Collection
 
